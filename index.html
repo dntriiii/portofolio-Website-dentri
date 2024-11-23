@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <nav class="navbar-nav ms-auto">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About Me</a>
+                    <a href="#skill" class="nav-link">Skill</a>
+                    <a href="#project" class="nav-link">Project</a>
+                    <a href="#contact" class="nav-link">Contact Me</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="home d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex flex-column justify-content-center">
+                    <div class="home-content">
+                        <h1>Hi, It's <span>Dentri Seviana</span></h1>
+                        <h3 class="text-animation">I'm a <span></span></h3>
+                        <p>I am an Information Technology student at 'Aisyiyah University Yogyakarta</p>
+                    </div>
+                    <div class="social-icon">
+                        <a href="https://www.instagram.com/dentriaprilia/profilecard/?igsh=MXNwdWFxMG13dTBvMg=="><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@dentriaprilia?_t=8rZb6iEfm92&_r=1 "><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/dentri-undefined-122271336/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/dntriiii"><i class="bi bi-github"></i></a>
+                    </div>
+                    <div class="btn-group">
+                        <a href="cv dentri.pdf" class="btn btn-primary" download>Download CV</a>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center">
+                    <div class="home-img">
+                        <img src="dentri.jpg" alt="Profile Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container-about" data-aos="fade-up" data-aos-duration="1500">
+            <h1>About <span>Me</span></h1>
+            <p>I am a 3rd semester student at Universitas Aisyiyah Yogyakarta majoring in Information Technology.
+                I currently live in Yogyakarta City, DIY Province. I am a person who loves to learn and has a sense of curiosity.</p>
+            <p>I have taken several courses and also completed several projects that must be completed in courses related to web development and also databases.</p>
+        </div>
+    </section>
+    <!-- ABOUT -->
+
+    <!-- Skill Section -->
+    <section class="skill" id="skill">
+        <h1>My <span>Skills</span></h1>
+        <div class="container-image-skill">
+            <div class="field-image-skill" data-aos="flip-left">
+                <img src="logo_html.png" alt="HTML" class="image-skill">
+                <span>HTML</span>
+            </div>
+            <div class="field-image-skill">
+                <img src="logo_css.png" alt="CSS" class="image-skill">
+                <span>CSS</span>
+            </div>
+            <div class="field-image-skill">
+                <img src="logo_javascript.png" alt="JavaScript" class="image-skill">
+                <span>JAVASCRIPT</span>
+            </div>
+            <div class="field-image-skill">
+                <img src="logo_php.png" alt="PHP" class="image-skill">
+                <span>PHP</span>
+            </div>
+            <div class="field-image-skill">
+                <img src="logo_sql.png" alt="SQL" class="image-skill">
+                <span>SQL</span>
+            </div>
+            <div class="field-image-skill">
+                <img src="canva.png" alt="SQL" class="image-skill">
+                <span>CANVA</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="project" id="project">
+        <h1>Pro<span>ject</span></h1>
+        <div class="container-project">
+            <div class="field-project">
+                <a href="your_project_link" class="link-to-project">
+                    <img src="projek07.png" alt="Task List Project">
+                    <div class="field-text-project">
+                        <h3>Task List<span> To do List Application with CRUD </span></h3>
+                        <p class="description-project">A project or task management application that allows users to record, prioritize, and track the progress of various tasks to be completed.</p>
+                    </div>
+                </a>
+                <div class="technology-project">
+                    <a href="#">HTML</a>
+                    <a href="#">CSS</a>
+                    <a href="#">JavaScript</a>
+                    <a href="#">Bootstrap</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <h2>Contact Me</h2> 
+        <form id="contactForm" action="https://getform.io/f/ajjjrnva" method="POST" class="contact-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-contact">
+                    <div class="social-links text-center">
+                        <a href="https://www.instagram.com/dentriaprilia/profilecard/?igsh=MXNwdWFxMG13dTBvMg=="><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@dentriaprilia?_t=8rZb6iEfm92&_r=1 "><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="https://www.linkedin.com/in/dentri-undefined-122271336/"><i
+                                class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/dntriiii"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dentri Seviana.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    
+    
+    <!-- AOS ANIMATION JAVASCRIPT -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS ANIMATION JAVASCRIPT -->
+
+    <!-- SWEET ALERT -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Tambahkan ini di bagian <head> atau sebelum tag </body> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.3/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.3/dist/sweetalert2.all.min.js"></script>
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.3/dist/sweetalert2.min.css">
+
+<!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.5.3/dist/sweetalert2.all.min.js"></script>
+
+    <!-- MY SCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,658 @@
+:root {
+    --main-color: #989b7c; /* Sesuaikan warna sesuai kebutuhan */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #948b69;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo span {
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+#menu-icon {
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.home-content h3 {
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.home-content h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    top: -35rem; /* Posisi vertikal tetap */
+    width: 22vw;
+    height: 22vw;
+    margin-left: 850px; /* Menghapus margin kiri */
+    margin-right: 150px; /* Memberikan jarak di sisi kanan */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 0 25px var(--main-color);
+    display: block; /* Pastikan elemen gambar tidak mengganggu elemen lainnya */
+}
+
+
+.home-img img:hover {
+    box-shadow: 0 0 25px var(--main-color),
+        0 0 50px var(--main-color),
+        0 0 100px var(--main-color);
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+}
+
+.social-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    font-size: 2rem;
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease-in-out;
+}
+
+
+.social-icon a:hover {
+    color: var(--main-color);
+    transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for size */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Make text bold */
+    color: #fff; /* Text color */
+    background-color: #5f605a; /* Primary color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.btn:hover {
+    background-color: #767a7b; /* Darker shade on hover */
+}
+
+.btn:active {
+    background-color: #ebece2; /* Even darker shade when clicked */
+}
+
+.btn-group {
+    margin: 20px 0; /* Add margin around button group */
+    text-align: center; /* Center the button group */
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.btn-group a:nth-of-type(2) {
+    background-color: black;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 0 0 25px transparent;
+}
+
+.btn-group a:nth-of-type(2):hover {
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+    color: rgb(0, 0, 0);
+}
+
+.text-animation span {
+    position: relative;
+}
+
+.text-animation span::before {
+    content: "Informatics Student";
+    color: var(--main-color);
+    animation: words 20s infinite;
+}
+
+.text-animation span::after {
+    content: "";
+    background-color: var(--bg-color);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid var(--main-color);
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--main-color);
+    }
+}
+
+@keyframes words {
+
+    0%,
+    35% {
+        content: "Freelance Graphic Designer";
+    }
+
+    36%,
+    70% {
+        content: "Frontend Developer";
+    }
+
+    71%,
+    100% {
+        content: "UI/UX Designer";
+    }
+}
+
+@keyframes typing {
+
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 8px);
+    }
+}
+
+/* ABOUT DESKTOP */
+.about {
+    padding: 100px 0;
+}
+
+.container-about {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 80px 70px;
+    background-color: rgb(125, 126, 101);
+    border: 2px solid #5f605a(154, 167, 165);
+    border-radius: 30px;
+}
+
+.container-about h1 {
+    color: rgb(253, 255, 254);
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.container-about h1 span {
+    color: rgb(251, 247, 247);
+}
+
+.container-about p {
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container-about p:nth-child(2) {
+    margin-bottom: 30px;
+}
+
+/* ABOUT DESKTOP */
+
+
+/* SKILLS DESKTOP */
+.skill {
+    padding: 80px 0;
+
+}
+
+.skill h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.skill h1 span {
+    color: rgb(247, 248, 248);
+
+}
+
+.container-image-skill {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.field-image-skill {
+    position: relative;
+    background-color: rgb(54, 58, 58);
+    width: 20%;
+    border: 2px solid rgb(92, 98, 97);
+    border-radius: 12px;
+    height: 205px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field-image-skill span {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(129, 129, 116);
+    color: rgb(237, 238, 228);
+    border: none;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 180px;
+    transform: scale(0, 1);
+    transform-origin: bottom;
+    transition: transform .5s;
+
+}
+
+.field-image-skill:hover span {
+    transform: scale(1);
+
+}
+
+.image-skill {
+    width: 120px;
+}
+
+/* SKILLS DESKTOP */
+
+
+/* PROJECT DESKTOP */
+:root {
+    --main-color: #989b7c; /* Sesuaikan warna sesuai kebutuhan */
+}
+.project {
+    padding: 80px 0;
+}
+
+
+.field-text-project h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: var(--main-color); /* Mengubah warna teks h3 menjadi warna utama */
+}
+
+.field-text-project h3.task-list {
+    color: var(--main-color); /* Mengubah warna teks "task list" */
+}
+
+.description-project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    color: var(--main-color); /* Mengubah warna deskripsi menjadi warna utama */
+}
+
+.project h1 {
+    font-size: 60px;
+    text-align: center;
+    color: rgb(249, 250, 247);
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 40px;
+}
+
+.project h1 span {
+    color: rgb(246, 246, 244);
+}
+
+.container-project {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.field-project {
+    width: 42%;
+    border-radius: 12px;
+    padding: 12px 40px 12px 12px;
+    background-color: rgb(40, 45, 45);
+    border: 1px solid rgb(99, 101, 101);
+    transition: transform .3s ease-in-out;
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-rows: max-content;
+    row-gap: 22px;
+    grid-template-areas: 
+    'main-project' 'technology-project';
+    transition: transform .3s;
+}
+
+.field-project:hover {
+    transform: translateY(-10px);
+}
+
+.link-to-project {
+    grid-area: main-project;
+    display: flex;
+    gap: 16px;
+}
+
+.field-project img {
+    border-radius: 8px;
+    width: 30%;
+    min-height: 120px;
+}
+
+.field-text-project {
+    width: 70%;
+    margin-top: 3px;
+}
+
+.field-text-project h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.field-text-project h3 span {
+    color: rgb(78, 82, 81);
+}
+
+.description-project {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+.technology-project {
+    display: flex;
+    justify-content: end;
+    gap: 16px;
+    grid-area: technology-project;;
+}
+
+.technology-project a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: rgb(18, 13, 7);
+    border: 2px solid rgb(159, 150, 117);
+    color: rgb(154, 152, 136);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.technology-project a:hover {
+    cursor: pointer;
+}
+
+.contact-title {
+    font-size: 500rem; /* Ukuran font judul lebih besar */
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 100rem; /* Jarak bawah judul */
+}
+
+.container h2 {
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 15px;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(30, 30, 30, 0.8); /* Latar belakang gelap */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(122, 116, 101, 0.5); /* Bayangan halus */
+}
+
+.contact-form .form-control {
+    background-color: rgba(255, 255, 255, 0.2); /* Latar belakang input semi-transparent */
+    color: white;
+    border: 1px solid rgba(126, 125, 104, 0.6); /* Border lebih terang */
+    border-radius: 5px;
+    padding: 1rem; /* Tambahkan padding untuk ruang yang lebih baik */
+    font-size: 1rem; /* Ukuran font lebih besar untuk keterbacaan */
+    width: 100%; /* Lebar 100% agar mengisi kolom */
+    box-sizing: border-box; /* Memastikan padding dihitung dalam lebar total */
+    margin-bottom: 1rem; /* Jarak antara input */
+}
+
+.contact-form .form-control:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 5px var(--main-color); /* Efek bayangan fokus */
+}
+
+.contact-form label {
+    color: var(--main-color);
+    margin-bottom: 0.5rem; /* Spasi antara label dan input */
+    display: block; /* Membuat label berada di atas input */
+}
+
+.contact-form button {
+    background-color: var(--main-color);
+    color: white; /* Warna teks tombol */
+    border-radius: 50px;
+    padding: 1rem 2rem; /* Padding lebih besar untuk tombol */
+    border: none;
+    transition: 0.3s ease;
+    font-size: 1rem; /* Ukuran font lebih besar untuk keterbacaan */
+}
+
+.contact-form button:hover {
+    background-color: white;
+    color: var(--main-color);
+    box-shadow: 0 0 15px var(--main-color);
+}
+
+
+.footer {
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 100%;
+}
+
+.footer .footer-contact {
+    margin-bottom: 2rem;
+}
+
+.footer .social-links a {
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-right: 1rem;
+    transition: 0.3s;
+}
+
+.footer .social-links a:last-child {
+    margin-right: 0;
+}
+
+.footer .social-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem 0 0;
+}
+
+.footer-bottom p {
+    font-size: 1.4rem;
+}
